@@ -24,7 +24,7 @@ def run_game():
         table.remove(card)
 
     print_game_results()
-"""
+""" ### CODE_REVIEW: commented, unused large chunk of code. May become long-lived, reduce readibility and cause confusion
 
 
 def run_game_with_form():
