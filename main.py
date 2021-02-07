@@ -6,7 +6,7 @@ import uipyqt
 import scopa
 from PyQt5.QtWidgets import *
 
-# how many
+# how many ### CODE_REVIEW old piontless comment
 
 
 # this is the main game loop
@@ -24,13 +24,13 @@ def run_game():
         table.remove(card)
 
     print_game_results()
-""" ### CODE_REVIEW: commented, unused large chunk of code. May become long-lived, reduce readibility and cause confusion
+""" ### CODE_REVIEW commented, unused large chunk of code. May become long-lived, reduce readibility and cause confusion
 
 
 def run_game_with_form():
     app = QApplication(sys.argv)
-    sc = scopa.Scopa()
-    ex = uipyqt.ScopaForm(sc)
+    sc = scopa.Scopa() ### CODE_REVIEW too short variable name, no context or intent
+    ex = uipyqt.ScopaForm(sc) ### CODE_REVIEW too short variable name, no context or intent
 
     ex.my_move()
     ex.show()
@@ -41,5 +41,5 @@ def run_game_with_form():
 if __name__ == '__main__':
     run_game_with_form()
 
-    # print_status()
-    # run_game()
+    # print_status() ### CODE_REVIEW commented, unused code.
+    # run_game() ### CODE_REVIEW commented, unused code.
